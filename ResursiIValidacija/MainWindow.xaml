@@ -12,7 +12,7 @@
 	<StackPanel>
 		<Label Content="{Binding Source={StaticResource MojaOsoba}, Path=Ime}" FontSize="24"/>
 		<Label Content="{Binding Source={StaticResource MojaOsoba}, Path=Godine}" FontSize="24"/>
-		<TextBox FontSize="24">
+		<TextBox Style="{StaticResource StilZaTxtBox}" Validation.ErrorTemplate="{StaticResource ZaGresku}">
 			<TextBox.Text>
 				<Binding Source="{StaticResource MojaOsoba}" Path="Godine" UpdateSourceTrigger="PropertyChanged">
 					<Binding.ValidationRules>

@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="DrugiProzor" Height="450" Width="800">
     <Grid>
-		<TextBox Text="{Binding Source={StaticResource MojaOsoba}, Path=Ime, UpdateSourceTrigger=PropertyChanged}" FontSize="24"/>
+		<TextBox Text="{Binding Source={StaticResource MojaOsoba}, Path=Ime, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource StilZaTxtBox}"/>
 	</Grid>
 </Window>
