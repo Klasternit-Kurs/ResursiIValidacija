@@ -8,6 +8,7 @@
 
 		<Style x:Key="StilZaTxtBox" TargetType="TextBox">
 			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Margin" Value="0 50"/>
 			<Style.Triggers>
 				<Trigger Property="Validation.HasError" Value="true">
 					<Setter Property="ToolTip" 
@@ -19,7 +20,7 @@
 		<ControlTemplate x:Key="ZaGresku">
 			<DockPanel>
 				<AdornedElementPlaceholder DockPanel.Dock="Top"/>
-				<Label Foreground="Red" FontSize="24">GRESKA</Label>
+				<Label Foreground="Red" FontSize="24" Content="GRESKA" />
 			</DockPanel>
 		</ControlTemplate>
 		
